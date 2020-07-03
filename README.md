@@ -10,11 +10,13 @@ These solutions were written to be run within the [Node.js](nodejs.org) runtime 
 $ node chapter01/helloworld.js 
 ````
 
-## Solutions Provided
+## Notes
 
 The excercise solutions attempt to only use the concepts that have been introduced up to that
 point in the book.  For example, chapter one solutions to not use functions since functions
 are introduced in chapter two.
+
+## Solutions
 
 ### Chapter One - Values, Types, and Operators
 
@@ -26,3 +28,8 @@ are introduced in chapter two.
 * fizzbuzz.js - Outputs the classic [Fizz buzz game](https://en.wikipedia.org/wiki/Fizz_buzz) and [FizzBuzz programming interview question](https://blog.codinghorror.com/why-cant-programmers-program/) for numbers from 1 to 100
 * chessboard.js - Outputs an NxN [chessboard](https://en.wikipedia.org/wiki/Chessboard) pattern to the console
 
+### Chapter Three - Functions
+
+* minimum.js - Implement min(), a basic Math.min function
+* recursion.js - Demonstrates recursion by using a recursive isEven() function to determine if a number is even
+* beancount.js - Implements a function, countLetters(), to count letters in a string and a second function, countBs(), to count the number of uppercase letter 'B's in a string

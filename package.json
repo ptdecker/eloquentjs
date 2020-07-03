@@ -1,0 +1,19 @@
+{
+    "name": "eloquentjs",
+    "version": "0.1.0",
+    "description": "Eloquent JavaScript Exercise Solutions",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ptdecker/eloquentjs.git"
+    },
+    "author": "P. Todd Decker",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "bugs": {
+        "url": "https://github.com/ptdecker/eloquentjs/issues"
+    },
+    "homepage": "https://github.com/ptdecker/eloquentjs#readme"
+}

@@ -4,7 +4,10 @@
 // string and then uses that function to implement a second function that
 // counts the number of the letter 'B' in a string
 
-function countLetters(s, l) {
+// countChar() returns the number of times character 'l' is found within string 's'
+// NOTE: A for-of style array loop could be used in this function but that loop
+// style is not introduced until chapter 4. 
+function countChar(s, l) {
     let count = 0;
     for (let i = 0; i < s.length; i++) {
         if (s[i] == "B") count++;
@@ -12,13 +15,19 @@ function countLetters(s, l) {
     return count
 }
 
+// countBs() returns the number of times the character 'B' is found within string 's'
 function countBs(s) {
-    return countLetters(s, 'B');
+    return countChar(s, 'B');
 }
 
-let s = "This string has none of them.";
-console.log(`'${s}' contains ${countBs(s)} letter 'B's`);
-s = "Bye, baby Bunting, Bobby's gone a-hunting";
-console.log(`'${s}' contains ${countBs(s)} letter 'B's`);
-s = "";
-console.log(`'${s}' contains ${countBs(s)} letter 'B's`);
+// Official test cases from https://eloquentjavascript.net/code/#3.3
+
+console.log(countBs("BBC"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+// → 4
+
+// Additional test cases
+
+console.log(countChar("", "B"));
+// → 0

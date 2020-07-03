@@ -15,5 +15,6 @@
     "bugs": {
         "url": "https://github.com/ptdecker/eloquentjs/issues"
     },
-    "homepage": "https://github.com/ptdecker/eloquentjs#readme"
+    "homepage": "https://github.com/ptdecker/eloquentjs#readme",
+    "type": "module"
 }

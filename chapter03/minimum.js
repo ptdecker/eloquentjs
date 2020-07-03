@@ -2,10 +2,22 @@
 //
 // Implements a minimal implementation of the Math.min function
 
+// min() compates 'x' to 'y' and returns the minimum value
 function min(x, y) {
     return (x < y) ? x : y;
 }
 
-console.log(`The minimum of '1' and '2' is ${min(1, 2)}`);
-console.log(`The minimum of '2' and '1' is ${min(2, 1)}`);
-console.log(`The minimum of '1' and '1' is ${min(1, 1)}`);
+// Official test cases from https://eloquentjavascript.net/code/#3.1
+
+console.log(min(0, 10));
+// → 0
+console.log(min(0, -10));
+// → -10
+
+// Additional test cases
+
+console.log(min(1, 1));
+// → 1
+
+// NOTE: min() could be extended to find the minimum of as many numbers as are
+// passed to the function by using the rest parameter introduced in chapter 4

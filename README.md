@@ -33,3 +33,18 @@ are introduced in chapter two.
 * minimum.js - Implement min(), a basic Math.min function
 * recursion.js - Demonstrates recursion by using a recursive isEven() function to determine if a number is even
 * beancount.js - Implements a function, countLetters(), to count letters in a string and a second function, countBs(), to count the number of uppercase letter 'B's in a string
+
+### Chapter Four - Data Structures: Objects and Arrays
+
+* deepcompare.js - Implements a deep comparision of equality between two objects
+* list.js - Implements functions to manipulate a list data structure (single linked)
+* range.js - Implements functions to create a range of numbers and sum and array
+* reverse.js - Reverses the elements of an array using two approaches
+
+### Chapter Five -- Higher-Order Functions
+
+* flatten.js - Flattens arrays into a single array
+* loop.js - A custom loop that tests and updates while processing
+* every.js - Tests to see if all elements in an array pass a test
+* dominant.js - Determines the dominant writting direction in a string of text
+

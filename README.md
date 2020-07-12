@@ -48,3 +48,9 @@ are introduced in chapter two.
 * every.js - Tests to see if all elements in an array pass a test
 * dominant.js - Determines the dominant writting direction in a string of text
 
+### Chapter Six -- The Secret Life of Objects
+
+* vector.js - Defines a vector class
+* groups.js - Defines a 'groups' data structure that is similar to the standard JavaScript set data structure
+* iterable.js - Extends 'groups' so that it is iterable
+* borrow.js - Illustrates how to borrow a method from another object

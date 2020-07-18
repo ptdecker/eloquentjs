@@ -54,3 +54,18 @@ are introduced in chapter two.
 * groups.js - Defines a 'groups' data structure that is similar to the standard JavaScript set data structure
 * iterable.js - Extends 'groups' so that it is iterable
 * borrow.js - Illustrates how to borrow a method from another object
+
+### Chapter Seven -- Project: A Robot
+
+* measure.js - Compares the performance of two robots
+
+### Resources
+
+The sources in this section are mostly direct copies from the book and are used
+to support some of the presented solutions. Where they are different, it is out
+of style changes mainly.  There are some things that I prefer over Marijn's
+approach. But, who am I to know which is best.  :-)
+
+* scripts.js - leveraged by dominant.js
+* meadowfield.js - implementation of the robot project from chapter 7 made into a module for usage by chapter 7 solutions
+* persistent.js - implementation of a persistent group

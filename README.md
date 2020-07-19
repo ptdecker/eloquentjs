@@ -58,6 +58,13 @@ are introduced in chapter two.
 ### Chapter Seven -- Project: A Robot
 
 * measure.js - Compares the performance of two robots
+* efficient.js - Defines a more efficent robot
+* persistent.js - Defines a persistent group
+
+### Chapter Eight -- Bugs and Errors
+
+* retry.js - Implements a retry capability to retry a failing function until it succeeds
+* lockbox.js - Handles accessing a box while preserving its states
 
 ### Resources
 

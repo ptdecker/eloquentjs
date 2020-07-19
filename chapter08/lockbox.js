@@ -3,9 +3,14 @@
 // Simulates accessing a box that could be locked or unlocked
 
 function withBoxUnlocked(body) {
-    box.unlock()
-    body()
-    box.lock()
+    const wasLocked = box.locked;
+    box.unlock();
+    try {
+        body();
+        return;
+    } finally {
+        if (wasLocked) { box.lock() }
+    }
 }
 
 // Official test cases and box from https://eloquentjavascript.net/code/#8.2

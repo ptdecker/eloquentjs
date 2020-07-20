@@ -66,6 +66,12 @@ are introduced in chapter two.
 * retry.js - Implements a retry capability to retry a failing function until it succeeds
 * lockbox.js - Handles accessing a box while preserving its states
 
+### Chapter Nine -- Regular Expressions
+
+* regexgolf.js - Short regex for selected string tests
+* quotestyle.js - Single to double quote replacement
+* numbers.js - JavaScript number matching
+
 ### Resources
 
 The sources in this section are mostly direct copies from the book and are used

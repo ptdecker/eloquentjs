@@ -72,6 +72,12 @@ are introduced in chapter two.
 * quotestyle.js - Single to double quote replacement
 * numbers.js - JavaScript number matching
 
+### Chapter Ten -- Modules
+
+* modulerobot.js - A discussion of module orgainzation of the robot project
+* roads.js - CommonJS Module for the array of roads.  Also includes an ES6 style version as a block comment
+* circular.js - circular dependencies
+
 ### Resources
 
 The sources in this section are mostly direct copies from the book and are used

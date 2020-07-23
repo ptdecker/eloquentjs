@@ -78,6 +78,11 @@ are introduced in chapter two.
 * roads.js - CommonJS Module for the array of roads.  Also includes an ES6 style version as a block comment
 * circular.js - circular dependencies
 
+### Chapter Eleven -- Asynchronous Programming
+
+* crowscalpel.js - Implements ansyn 'locateScalpel' function
+* promiseall.js - A promise that waits for all theother promises to succeed
+
 ### Resources
 
 The sources in this section are mostly direct copies from the book and are used
@@ -87,4 +92,3 @@ approach. But, who am I to know which is best.  :-)
 
 * scripts.js - leveraged by dominant.js
 * meadowfield.js - implementation of the robot project from chapter 7 made into a module for usage by chapter 7 solutions
-* persistent.js - implementation of a persistent group

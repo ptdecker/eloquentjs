@@ -2,11 +2,16 @@
 
 This repository presents solutions to the excercises in the third edition of Marijn Haverbeke's *Eloquent JavaScript* ([ISBN 978-1-59327-950-9](https://read.amazon.com/kp/embed?asin=B07C96Q217&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_fxZ.EbDN7B1DB)).
 
+## Installing
+
+To use this repository, you will need to clone it to your local computer and you will need to have [node.js](nodejs.org) installed as they were written under this assumption.  There are numerous online tutorials and training materials for how to do both these tasks and I recommend you use these resources if you are new to both of these tools.
+
 ## Running Solutions
 
-These solutions were written to be run within the [Node.js](nodejs.org) runtime environment. After installing Node.js and downloading this repository, to run an excercise simply run node with the excercise name as a parameter from the Terminal.  For example:
+As mentioned, these solutions were written to be run within the [Node.js](nodejs.org) runtime environment. After installing Node.js and downloading this repository, to run an excercise simply run node with the excercise name as a parameter from a terminal prompt after changing the directory to where you locally installed the repository.  For example, assuming you are using Mac OS and have it installed on a folder called `elequentjs` under a folder called `code`, you would:
 
 ````bash
+$ cd ~/code/elequentjs
 $ node chapter01/helloworld.js 
 ````
 
@@ -86,6 +91,10 @@ are introduced in chapter two.
 ### Chapter Twelve -- Project: A Programming Language
 
 * eggsamples.js - Text provided sample programs using the base Egg interpreter
+* arrays.js - Addes support of arrays to the base Egg interpreter
+* closure.js - Explains how closures work in the base Egg interpreter
+* comments.js - Adds comment support to the base Egg interpreter
+* fixedscope.js - Adds a new 'set' special form
 
 ### Resources
 

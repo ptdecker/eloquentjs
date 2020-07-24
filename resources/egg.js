@@ -10,8 +10,18 @@
 /* ENVIROMENT */
 
 export {
-    run
+    run,
+    topScope,
+    parseExpression,
+    parseApply,
+    parse,
+    specialForms,
+    evaluate
 }
+
+const stringAtomic = /^"([^"]*)"/
+const numberAtomic = /^\d+\b/
+const wordAtomic = /^[^\s(),#"]+/
 
 const topScope = Object.create(null);
 
@@ -97,11 +107,11 @@ specialForms.fun = (args, scope) => {
 function parseExpression(program) {
     program = program.trim();
     let match, expr;
-    if (match = /^"([^"]*)"/.exec(program)) {
+    if (match = stringAtomic.exec(program)) {
         expr = { type: "value", value: match[1] };
-    } else if (match = /^\d+\b/.exec(program)) {
+    } else if (match = numberAtomic.exec(program)) {
         expr = { type: "value", value: Number(match[0]) };
-    } else if (match = /^[^\s(),#"]+/.exec(program)) {
+    } else if (match = wordAtomic.exec(program)) {
         expr = { type: "word", name: match[0] };
     } else {
         throw new SyntaxError("Unexpected syntax: " + program);

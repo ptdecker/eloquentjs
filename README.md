@@ -4,16 +4,32 @@ This repository presents solutions to the excercises in the third edition of Mar
 
 ## Installing
 
-To use this repository, you will need to clone it to your local computer and you will need to have [node.js](nodejs.org) installed as they were written under this assumption.  There are numerous online tutorials and training materials for how to do both these tasks and I recommend you use these resources if you are new to both of these tools.
+To use this repository, you will need to clone it to your local computer.  You will also need to have [Node.js](nodejs.org) installed along with the [Express](https://expressjs.com/) framework.  There are numerous online tutorials and training materials for how to accomplish this so I won't duplicate that information here.
 
 ## Running Solutions
 
-As mentioned, these solutions were written to be run within the [Node.js](nodejs.org) runtime environment. After installing Node.js and downloading this repository, to run an excercise simply run node with the excercise name as a parameter from a terminal prompt after changing the directory to where you locally installed the repository.  For example, assuming you are using Mac OS and have it installed on a folder called `elequentjs` under a folder called `code`, you would:
+As mentioned, these solutions were written to be run within the [Node.js](nodejs.org) runtime environment.
+
+### Running Chapter 1 through 12 Exercises
+
+After installing Node.js and downloading this repository, to run an excercise simply run node with the excercise name as a parameter from a terminal prompt after changing the directory to where you locally installed the repository.  For example, assuming you are using Mac OS and have it installed on a folder called `elequentjs` under a folder called `code`, you would:
 
 ````bash
 $ cd ~/code/elequentjs
 $ node chapter01/helloworld.js 
 ````
+
+### Running Chapter 13 through XX Exercises
+
+The exercises for Chapter 13 through XX utilize a NodeJS server and the Express framework.  To support running these exercises, there a basic web server is provided in the resources directory.
+To use this server to run an exercise, first use the following:
+
+````bash
+$ cd ~/code/elequentjs
+$ node resources/serve chapter13/helloworld 
+````
+
+Then browse to http://localhost:6502 in your favorite browser to view the exercise solution. When done running the exercise, terminate the server by pressing 'Ctrl-C' in the terminal.
 
 ## Notes
 
@@ -95,6 +111,13 @@ are introduced in chapter two.
 * closure.js - Explains how closures work in the base Egg interpreter
 * comments.js - Adds comment support to the base Egg interpreter
 * fixedscope.js - Adds a new 'set' special form
+
+### Chapter Thirteen - JavaScript and the Browser
+
+Chapter thirteen has no excercises.  The solution here lays groundwork for the browser-based solutions going forward by providing a Node-based web server to serve the HTML, CSS, and JavaScript
+files along with any other assets.
+
+* hello/ - Another "Hello World" to illustrate using the node web server provided for viewing web-based exercises
 
 ### Resources
 

@@ -83,6 +83,10 @@ are introduced in chapter two.
 * crowscalpel.js - Implements ansyn 'locateScalpel' function
 * promiseall.js - A promise that waits for all theother promises to succeed
 
+### Chapter Twelve -- Project: A Programming Language
+
+* eggsamples.js - Text provided sample programs using the base Egg interpreter
+
 ### Resources
 
 The sources in this section are mostly direct copies from the book and are used
@@ -92,3 +96,5 @@ approach. But, who am I to know which is best.  :-)
 
 * scripts.js - leveraged by dominant.js
 * meadowfield.js - implementation of the robot project from chapter 7 made into a module for usage by chapter 7 solutions
+* egg.js - The base implementation of the Egg language
+* crowtech.js - resources needed for chapter 11 exercises

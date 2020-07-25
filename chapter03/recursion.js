@@ -5,10 +5,10 @@
 
 // isEven() returns boolean true if 'x' is an even number
 function isEven(x) {
-    if (x < 0) x *= -1;
-    if (x == 0) return true;
-    if (x == 1) return false;
-    return isEven(x - 2);
+  if (x < 0) x *= -1;
+  if (x == 0) return true;
+  if (x == 1) return false;
+  return isEven(x - 2);
 }
 
 // Official test cases from https://eloquentjavascript.net/code/#3.2

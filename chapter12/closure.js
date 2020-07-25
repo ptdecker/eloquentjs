@@ -1,6 +1,6 @@
 // closure.js
 //
-// 
+//
 
 // The 'fun' function is defined in egg.js as:
 //
@@ -32,9 +32,9 @@
 // function captures in its local scope the scope currently in effect when the function
 // was created thus creating a closure.
 
-import * as egg from "../resources/egg.js"
+import * as egg from "../resources/egg.js";
 
 egg.run(`
 do(define(f, fun(a, fun(b, +(a, b)))),
     print(f(4)(5)))
-`)
+`);

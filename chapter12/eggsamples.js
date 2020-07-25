@@ -2,7 +2,7 @@
 //
 // Sample Egg programs using the base Egg interpreter
 
-import * as egg from "../resources/egg.js"
+import * as egg from "../resources/egg.js";
 
 egg.run(`
 do(define(total, 0),

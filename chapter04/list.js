@@ -7,38 +7,37 @@
 
 // prepend returns a list with element prepended to it as the first item
 function prepend(element, list) {
-    return { value: element, rest: list }
+  return { value: element, rest: list };
 }
 
 // arrayToList returns a list built out of the array passed to it
 function arrayToList(array = []) {
-    let list = null;
-    let i = array.length;
-    while (i > 0) list = prepend(array[--i], list);
-    return list;
+  let list = null;
+  let i = array.length;
+  while (i > 0) list = prepend(array[--i], list);
+  return list;
 }
 
 // listToArray returns an array build out of the nodes of a list
 function listToArray(list = null) {
-    let array = [];
-    let element = list;
-    while (element != null) {
-        array.push(element.value);
-        element = element.rest;
-    }
-    return array;
+  let array = [];
+  let element = list;
+  while (element != null) {
+    array.push(element.value);
+    element = element.rest;
+  }
+  return array;
 }
 
 // nth returns the value contained at a list at position n
 function nth(list = null, position = 0) {
-    let element = list;
-    for (let i = 0; element != null; i++) {
-        if (i == position) return element.value;
-        element = element.rest
-    }
-    return undefined
+  let element = list;
+  for (let i = 0; element != null; i++) {
+    if (i == position) return element.value;
+    element = element.rest;
+  }
+  return undefined;
 }
-
 
 // Official test cases from https://eloquentjavascript.net/code/#4.3
 

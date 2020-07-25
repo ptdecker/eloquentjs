@@ -4,7 +4,7 @@
 
 // min() compates 'x' to 'y' and returns the minimum value
 function min(x, y) {
-    return (x < y) ? x : y;
+  return x < y ? x : y;
 }
 
 // Official test cases from https://eloquentjavascript.net/code/#3.1

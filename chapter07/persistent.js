@@ -2,29 +2,27 @@
 //
 // Implements a persistent group.  Note that if a group will remain unchanged
 // following an add or delete function, the original group is returned.  Thus
-// operations that do not cause the group to actualy change do not require 
+// operations that do not cause the group to actualy change do not require
 // additional memory usage.
 
-
 class PGroup {
-    constructor(items) {
-        this.group = items;
-    }
+  constructor(items) {
+    this.group = items;
+  }
 
-    has(item) {
-        return this.group.includes(item);
-    }
+  has(item) {
+    return this.group.includes(item);
+  }
 
-    add(item) {
-        if (this.has(item)) return this;
-        return new PGroup(this.group.concat([item]))
-    }
+  add(item) {
+    if (this.has(item)) return this;
+    return new PGroup(this.group.concat([item]));
+  }
 
-    delete(item) {
-        if (!this.has(item)) return this;
-        return new PGroup(this.group.filter((v) => (v != item)));
-    }
-
+  delete(item) {
+    if (!this.has(item)) return this;
+    return new PGroup(this.group.filter((v) => v != item));
+  }
 }
 
 // The reason we can use one PGroup.empty instead of creating a new empty group

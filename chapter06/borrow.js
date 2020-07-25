@@ -1,4 +1,4 @@
-// borrow.js 
+// borrow.js
 //
 // Illustrates how to use a function from another object against a specified
 // object passing various arguments.

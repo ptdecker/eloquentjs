@@ -2,18 +2,18 @@
 //
 // Extends the base Egg interpreter to add support for arrays
 
-import * as egg from "../resources/egg.js"
+import * as egg from "../resources/egg.js";
 
 egg.topScope.array = (...values) => {
-    return values;
+  return values;
 };
 
 egg.topScope.length = (array) => {
-    return array.length;
+  return array.length;
 };
 
 egg.topScope.element = (array, i) => {
-    return array[i];
+  return array[i];
 };
 
 // Official test case from: https://eloquentjavascript.net/code/#12.1

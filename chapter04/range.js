@@ -4,21 +4,21 @@
 
 // range() returns an array containing elements every element between 'start'
 // and 'end' inclusively in increments of 'step'
-function range(start, end, step = (start < end) ? 1 : -1) {
-    let result = [];
-    if (step > 0) {
-        for (let i = start; i <= end; i += step) result.push(i);
-    } else {
-        for (let i = start; i >= end; i += step) result.push(i);
-    }
-    return result
+function range(start, end, step = start < end ? 1 : -1) {
+  let result = [];
+  if (step > 0) {
+    for (let i = start; i <= end; i += step) result.push(i);
+  } else {
+    for (let i = start; i >= end; i += step) result.push(i);
+  }
+  return result;
 }
 
 // sum() returns the summation of all the elements in an array
 function sum(x) {
-    let result = 0;
-    for (let item of x) result += item;
-    return result;
+  let result = 0;
+  for (let item of x) result += item;
+  return result;
 }
 
 // Official test cases from https://eloquentjavascript.net/code/#4.1

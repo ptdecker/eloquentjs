@@ -123,6 +123,7 @@ files along with any other assets.
 
 * examples/ - Compilation html, css, and scripts for the examples in each of the text sections for reference
 * table/ - Dynamically builds a table of mountains
+* elements/ - Manual implementation of document.getElementsByTagName
 
 ### Resources
 

@@ -15,5 +15,5 @@ if (exercise.length == 0) {
 express()
     .use(express.static('./' + exercise))
     .listen(6502, () => {
-        console.log(`Browse to http://localhost:6502 to see the exercise solution "${exercise}"`)
+        console.log(`Browse to http://localhost:6502 to see the exercise solution "${exercise}"\nTo exit, press 'Ctrl-C'`)
     });

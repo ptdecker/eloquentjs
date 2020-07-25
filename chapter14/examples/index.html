@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>My home page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="header">My home page</h1>
+    <p>(To view the results of the text examples, open the developer console in your browser and reload this page)</p>
+    <p>Hello, I am Marijn and this is my home page.</p>
+    <p>I also wrote a book! Read it <a href="http://eloquentjavascript.net">here</a>.</p>
+    <p>My ostrich Gertrude:</p>
+    <p><img id="gertrude" src="images/900px-Ostrich_mouth_open.jpg" style="width:250px;height:300px;"></p>
+    <p class="subtle">(Source: <a href="https://commons.wikimedia.org/wiki/File:Ostrich,_mouth_open.jpg">Wikicommons</a>, License: <a href="https://creativecommons.org/licenses/by/3.0/legalcode">Attribution 3.0 Unported (CC BY 3.0)</a></p>
+    <p>One</p>
+    <p id="main" class="a">Two</p>
+    <p id="main" class="a b">Three</p>
+    <p id="toggleText">The <img src="images/icons8-cat-26.png" alt="Cat"> in the <img src="images/icons8-black-hat-50.png" alt="Hat">.</p>
+    <p class="subtle">(Source: <a href="https://icons8.com/icons">Icons8</a>, License: <a href="https://icons8.com/vue-static/landings/pricing/icons8-license.pdf">Commercial</a></p>
+    <p><button id="btnToggle" onclick="toggleImages()">Replace Images</button></p>
+    <blockquote id="quote">
+        No book can ever be finished. While working on it we learn just enough to find it immature the moment we turn away from it.
+    </blockquote>
+    <p data-classified="secret">The launch code is 00000000.</p>
+    <p data-classified="unclassified">I have two feet.</p>
+    <p id="boxedIn" style="border: 3px solid red">I'm boxed in</p>
+    <p><span id="one"></span></p>
+    <p><span id="two"></span></p>
+    <p><a href=".">Normal link</a></p>
+    <p><a href="." style="color: green">Green link</a></p>
+    <p>This text is displayed <strong>inline</strong>,
+        <strong style="display: block">as a block</strong>, and
+        <strong style="display: none">not at all</strong>.</p>
+    <p id="para" style="color: purple">Nice text</p>
+    <p>Now <strong>strong text</strong> is italic and gray.</p>
+    <p>And if you go chasing <span class="animal">rabbits</span></p>
+    <p>And you know you're going to fall</p>
+    <p>Tell 'em a <span class="character">hookah smoking <span class="animal">caterpillar</span></span>
+    </p>
+    <p>Has given you the call</p>
+    <p style="text-align: center"><img src="images/icons8-cat-26.png" style="position: relative" id="movingCat"></p>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>

@@ -1,0 +1,21 @@
+strong {
+    font-style: italic;
+    color: gray;
+}
+
+.subtle {
+    color: gray;
+    font-size: 80%;
+}
+
+#header {
+    background: blue;
+    color: white;
+}
+
+
+/* p elements with id main and with classes a and b */
+
+p#main.a.b {
+    color: plum;
+}

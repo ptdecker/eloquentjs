@@ -119,14 +119,18 @@ files along with any other assets.
 
 * hello/ - Another "Hello World" to illustrate using the node web server provided for viewing web-based exercises
 
+### Chapter Fourteen - The Document Objectd Model
+
+* examples/ - Compilation html, css, and scripts for the examples in each of the text sections for reference
+* table/ - Dynamically builds a table of mountains
+
 ### Resources
 
-The sources in this section are mostly direct copies from the book and are used
-to support some of the presented solutions. Where they are different, it is out
-of style changes mainly.  There are some things that I prefer over Marijn's
-approach. But, who am I to know which is best.  :-)
+The sources in this section, with the exception of the web server, are mostly direct copies from the book and are used to support some of the presented solutions. Where they are different, it is out of style changes mainly.  There are some things that I prefer over Marijn's approach. But, who am I to know which is best.  :-)
 
 * scripts.js - leveraged by dominant.js
 * meadowfield.js - implementation of the robot project from chapter 7 made into a module for usage by chapter 7 solutions
 * egg.js - The base implementation of the Egg language
 * crowtech.js - resources needed for chapter 11 exercises
+* serve.js - A minimalist Express framework based web server for chapter 13 and beyond exercises
+* template/ - Blank index.html, style.css, and scripts.js template files for starting new exercise projects

@@ -126,6 +126,13 @@ files along with any other assets.
 - elements/ - Manual implementation of document.getElementsByTagName
 - catshat/ - The cat and the hat
 
+### Chapter Fifteen - Handling Events
+
+- ballon/ - Displays a baloon that can be inflated and deflated with arrow keys but don't over inflate
+- mousetrail/ - Mouse trails following the mouse
+- tabs/ - Simple tabbed interface
+- tictactoe/ - BONUS: A basic Tic-Tac-Toe implementation
+
 ### Resources
 
 The sources in this section, with the exception of the web server, are mostly direct copies from the book and are used to support some of the presented solutions. Where they are different, it is out of style changes mainly. There are some things that I prefer over Marijn's approach. But, who am I to know which is best. :-)

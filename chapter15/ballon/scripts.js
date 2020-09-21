@@ -3,6 +3,7 @@
 // JavaScript loaed by index.html in support of exercise
 
 const explosionEmoji = String.fromCodePoint(0x1f4a5);
+const maxBalloonSize = 10;
 
 let ballonFontSize = 1;
 
@@ -11,14 +12,14 @@ function ballonEvent(event) {
         return;
     }
     if (event.key == "ArrowDown" && ballonFontSize > 1) {
-        ballonFontSize -= 1;
+        ballonFontSize--;
         document.getElementById("baloon").style.fontSize = ballonFontSize + "em";
     }
-    if (event.key == "ArrowUp" && ballonFontSize < 10) {
-        ballonFontSize += 1;
+    if (event.key == "ArrowUp" && ballonFontSize < maxBalloonSize) {
+        ballonFontSize++;
         document.getElementById("baloon").style.fontSize = ballonFontSize + "em";
     }
-    if (event.key == "ArrowUp" && ballonFontSize == 10) {
+    if (event.key == "ArrowUp" && ballonFontSize == maxBalloonSize) {
         document.getElementById("baloon").textContent = explosionEmoji;
         removeEventListener("keydown", ballonEvent);
     }

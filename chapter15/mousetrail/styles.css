@@ -1,14 +1,17 @@
 /* Styles in support of exercise */
 
+
+/* className for the trail elements */
+
+body {
+    height: 300px;
+    background: beige;
+}
+
 .trail {
-    /* className for the trail elements */
     position: absolute;
     height: 6px;
     width: 6px;
     border-radius: 3px;
-    background: teal;
-}
-
-body {
-    height: 300px;
+    background-color: teal;
 }

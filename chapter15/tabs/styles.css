@@ -1,1 +1,28 @@
 /* Styles in support of exercise */
+
+.tab-bar {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+    outline: 1px solid black;
+}
+
+.tab-bar .tab-bar-button {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    white-space: normal;
+}
+
+.tab-selected {
+    color: white;
+    background-color: red;
+}
+
+.tab-body {
+    padding: 0.01em 16px;
+    outline: 1px solid black;
+}

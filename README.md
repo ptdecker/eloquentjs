@@ -19,7 +19,7 @@ $ cd ~/code/elequentjs
 $ node chapter01/helloworld.js
 ```
 
-### Running Chapter 13 through XX Exercises
+### Running Chapter 13 through XX Exercises and Extras
 
 The exercises for Chapter 13 through XX utilize a NodeJS server and the Express framework. To support running these exercises, there a basic web server is provided in the resources directory.
 To use this server to run an exercise, first use the following:
@@ -131,7 +131,10 @@ files along with any other assets.
 - ballon/ - Displays a baloon that can be inflated and deflated with arrow keys but don't over inflate
 - mousetrail/ - Mouse trails following the mouse
 - tabs/ - Simple tabbed interface
-- tictactoe/ - BONUS: A basic Tic-Tac-Toe implementation
+
+### Chapter Sixteen - Project: A Platform Game
+
+- lightblue/ - EloquentJS's version of [Thomas Palef's Dark Blue](http://www.lessmilk.com/game/dark-blue/) game
 
 ### Resources
 
@@ -143,3 +146,9 @@ The sources in this section, with the exception of the web server, are mostly di
 - crowtech.js - resources needed for chapter 11 exercises
 - serve.js - A minimalist Express framework based web server for chapter 13 and beyond exercises
 - template/ - Blank index.html, style.css, and scripts.js template files for starting new exercise projects
+
+### Extras
+
+Bonus things developed while working through the exercises
+
+- tictactoe/ - BONUS: A basic Tic-Tac-Toe implementation

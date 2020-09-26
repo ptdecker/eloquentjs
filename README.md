@@ -135,6 +135,7 @@ files along with any other assets.
 ### Chapter Sixteen - Project: A Platform Game
 
 - lightblue/ - EloquentJS's version of [Thomas Palef's Dark Blue](http://www.lessmilk.com/game/dark-blue/) game by leveraging author's provided code as modules
+-
 
 ### Resources
 

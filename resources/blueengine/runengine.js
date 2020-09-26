@@ -1,7 +1,7 @@
 import * as levels from "../blueengine/levels.js";
 import * as states from "../blueengine/state.js";
 
-export { runGame };
+export { runGame, runLevel };
 
 function trackKeys(keys) {
     let down = Object.create(null);

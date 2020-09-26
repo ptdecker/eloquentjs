@@ -134,7 +134,7 @@ files along with any other assets.
 
 ### Chapter Sixteen - Project: A Platform Game
 
-- lightblue/ - EloquentJS's version of [Thomas Palef's Dark Blue](http://www.lessmilk.com/game/dark-blue/) game
+- lightblue/ - EloquentJS's version of [Thomas Palef's Dark Blue](http://www.lessmilk.com/game/dark-blue/) game by leveraging author's provided code as modules
 
 ### Resources
 
@@ -146,6 +146,7 @@ The sources in this section, with the exception of the web server, are mostly di
 - crowtech.js - resources needed for chapter 11 exercises
 - serve.js - A minimalist Express framework based web server for chapter 13 and beyond exercises
 - template/ - Blank index.html, style.css, and scripts.js template files for starting new exercise projects
+- blueengine/ - Contains all the author provided code made into modules for usage by chapter 16 solutions
 
 ### Extras
 

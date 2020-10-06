@@ -20,16 +20,24 @@ class State {
 }
 
 State.prototype.update = function(time, keys) {
+    // Handle pause key pressed
+    if (keys.Escape) return new State(this.level, this.actors, "paused");
+
+    // Update all the actors and the state of the game
     let actors = this.actors.map((actor) => actor.update(time, this, keys));
     let newState = new State(this.level, actors, this.status);
 
+    // Bail out if we're not playing
     if (newState.status != "playing") return newState;
 
+    // Update the player
     let player = newState.player;
+    // Handle the player running into lava (environment, not actor)
     if (this.level.touches(player.pos, player.size, "lava")) {
         return new State(this.level, actors, "lost");
     }
 
+    // Check for any colissions between the moving elements (actors/sprites) and the player
     for (let actor of actors) {
         if (actor != player && overlap(actor, player)) {
             newState = actor.collide(newState);

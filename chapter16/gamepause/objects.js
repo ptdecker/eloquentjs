@@ -78,6 +78,7 @@ class Lava {
 
 Lava.prototype.size = new vec.Vec(1, 1);
 
+// Handle lava running into the player
 Lava.prototype.collide = function(state) {
     return new states.State(state.level, state.actors, "lost");
 };

@@ -17,7 +17,7 @@ function trackKeys(keys) {
     return down;
 }
 
-const arrowKeys = trackKeys(["ArrowLeft", "ArrowRight", "ArrowUp"]);
+const gameKeys = trackKeys(["ArrowLeft", "ArrowRight", "ArrowUp", "Escape"]);
 
 function runAnimation(frameFunc) {
     let lastTime = null;
@@ -39,13 +39,20 @@ function runLevel(level, Display) {
     let ending = 1;
     return new Promise((resolve) => {
         runAnimation((time) => {
-            state = state.update(time, arrowKeys);
+            state = state.update(time, gameKeys);
             display.syncState(state);
-            if (state.status == "playing") return true;
+            console.log(state.status, ending);
+            if (state.status == "playing") {
+                return true;
+            }
+            if (state.status == "paused") {
+                return false;
+            }
             if (ending > 0) {
                 ending -= time;
                 return true;
             }
+            console.log("default");
             display.clear();
             resolve(state.status);
             return false;
@@ -57,6 +64,10 @@ async function runGame(plans, Display) {
     for (let level = 0; level < plans.length;) {
         let status = await runLevel(new levels.Level(plans[level]), Display);
         if (status == "won") level++;
+        if (status == "paused") {
+            console.log("Game finished while paused");
+            break;
+        }
     }
     console.log("You've won!");
 }

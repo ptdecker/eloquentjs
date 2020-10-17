@@ -21,7 +21,16 @@ class State {
 
 State.prototype.update = function(time, keys) {
     // Handle pause key pressed
-    if (keys.Escape) return new State(this.level, this.actors, "paused");
+    if (keys.Escape) {
+        if (this.status == "paused") {
+            console.log("resuming play");
+            setTimeout(() => console.log("quick dealy"), 5000);
+            return new State(this.level, this.actors, "playing");
+        }
+        console.log("pausing");
+        setTimeout(() => console.log("quick dealy"), 5000);
+        return new State(this.level, this.actors, "paused");
+    }
 
     // Update all the actors and the state of the game
     let actors = this.actors.map((actor) => actor.update(time, this, keys));

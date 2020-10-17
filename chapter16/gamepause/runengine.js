@@ -45,9 +45,9 @@ function runLevel(level, Display) {
             if (state.status == "playing") {
                 return true;
             }
-            if (state.status == "paused") {
-                return false;
-            }
+            // if (state.status == "paused") {
+            //     return false;
+            // }
             if (ending > 0) {
                 ending -= time;
                 return true;
@@ -64,10 +64,10 @@ async function runGame(plans, Display) {
     for (let level = 0; level < plans.length;) {
         let status = await runLevel(new levels.Level(plans[level]), Display);
         if (status == "won") level++;
-        if (status == "paused") {
-            console.log("Game finished while paused");
-            break;
-        }
+        // if (status == "paused") {
+        //     console.log("Game finished while paused");
+        //     break;
+        // }
     }
     console.log("You've won!");
 }

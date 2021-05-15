@@ -6,11 +6,7 @@ This repository presents solutions to the excercises in the third edition of Mar
 
 ### Cloan This Repository
 
-<<<<<<< HEAD
 Cloan this GitHub repo to your development commputer.  Refer to [GitHub tutorials](https://duckduckgo.com/?q="clone github repository tutorial"&kp=1&kl=us-en) as there are several ways to do this.
-=======
-Cloan this GitHub repo to your development commputer.  Refer to [GitHub tutorials]( https://duckduckgo.com/?q="clone github repository tutorial"&kp=1&kl=us-en) as there are several ways to do this.
->>>>>>> e3fd1ebdd29bf48237f7cc8cc4f7038d17905407
 
 While working on this project, I used [Visual Studio Code](https://code.visualstudio.com) as my code editor and cloned the repo using [VSCode's built-in GitHub integration](https://code.visualstudio.com/docs/editor/github).
 

@@ -4,11 +4,41 @@ This repository presents solutions to the excercises in the third edition of Mar
 
 ## Installing
 
-To use this repository, you will need to clone it to your local computer. You will also need to have [Node.js](nodejs.org) installed along with the [Express](https://expressjs.com/) framework. There are numerous online tutorials and training materials for how to accomplish this so I won't duplicate that information here.
+### Cloan This Repository
+
+Cloan this GitHub repo to your development commputer.  Refer to [GitHub tutorials]( https://duckduckgo.com/?q="clone github repository tutorial"&kp=1&kl=us-en) as there are several ways to do this.
+
+While working on this project, I used [Visual Studio Code](https://code.visualstudio.com) as my code editor and cloned the repo using [VSCode's built-in GitHub integration](https://code.visualstudio.com/docs/editor/github).
+
+Whichever editor you use, these instructions assume you clone this repository to a `code` subdirectory of your user home directory (i.e. `~/code`). If you use a different subdirectory, you will need to change `~/code` in the example commands to the path to which you cloned the repo where neccessary.
+
+### Install NodeJS (along with NPM)
+
+If you haven't already done so, you will also need to have [Node.js](nodejs.org) installed. While some of these examples could in theory be run from the console in any browser, using Node lets us easily also run a small web server for the Chapter 13 excercises and beyond.  There are [numerous online tutorials and training materials](https://duckduckgo.com/?q="node installation tutorial"&kp=1&kl=us-en) for how to install NodeJS so I won't duplicate that information here.  Installing NodeJS should also automatically install the Node Package Manager ([NPM](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/)).
+
+### Check Your Installation
+
+Once you have cloaned the repo and installed NodeJS along with NPM, you can check your installation.  From a shell command prompt, you should be able to execute something like this (although the version numbers may differ):
+
+```bash
+$ cd ~/code/eloquentjs
+$ node --version
+v14.17.0
+$ npm --version
+v6.14.13
+```
+
+### Install Package Dependencies
+
+Now that you know NodeJS and NPM are both installed, you need to install a few JavaScript package dependencies.  These examples assume the [Express](https://express.js/) framework is installed along with one or two additional packages.  The `package.json` file tells NPM what packages to install, so installing the packages is as simple as:
+
+```bash
+$ npm install
+```
 
 ## Running Solutions
 
-As mentioned, these solutions were written to be run within the [Node.js](nodejs.org) runtime environment.
+As mentioned, these solutions were written to be run within the [Node.js](nodejs.org) runtime environment.  Once you have cloaned this repository and installed NodeJS and the Express framework, you should be able to run the excercise solutions.
 
 ### Running Chapter 1 through 12 Exercises
 
@@ -17,6 +47,7 @@ After installing Node.js and downloading this repository, to run an excercise si
 ```bash
 $ cd ~/code/elequentjs
 $ node chapter01/helloworld.js
+Hello World!
 ```
 
 ### Running Chapter 13 through XX Exercises and Extras
@@ -26,7 +57,9 @@ To use this server to run an exercise, first use the following:
 
 ```bash
 $ cd ~/code/elequentjs
-$ node resources/serve chapter13/helloworld
+$ node resources/serve chapter13/hello
+Browse to http://localhost:6502 to see the exercise solution "chapter13/hello"
+To exit, press 'Ctrl-C'
 ```
 
 Then browse to http://localhost:6502 in your favorite browser to view the exercise solution. When done running the exercise, terminate the server by pressing 'Ctrl-C' in the terminal.
@@ -35,7 +68,7 @@ Then browse to http://localhost:6502 in your favorite browser to view the exerci
 
 The excercise solutions attempt to only use the concepts that have been introduced up to that
 point in the book. For example, chapter one solutions to not use functions since functions
-are introduced in chapter two.
+are introduced in chapter two. So, if you're an expert and think "there is a better way" when looking at a solution please keep in mind that your concept might not have been introduced to the reader yet.
 
 ## Solutions
 
@@ -47,7 +80,7 @@ are introduced in chapter two.
 
 - triangle.js - Outputs a triangle to the console
 - fizzbuzz.js - Outputs the classic [Fizz buzz game](https://en.wikipedia.org/wiki/Fizz_buzz) and [FizzBuzz programming interview question](https://blog.codinghorror.com/why-cant-programmers-program/) for numbers from 1 to 100
-- chessboard.js - Outputs an NxN [chessboard](https://en.wikipedia.org/wiki/Chessboard) pattern to the console
+- chessboard.js - Outputs an NxN [chessboard](https://en.wikipedia.org/wiki/Chessboard) pattern to the console (the dimension is coded into the program)
 
 ### Chapter Three - Functions
 
@@ -136,7 +169,7 @@ files along with any other assets.
 
 - lightblue/ - EloquentJS's version of [Thomas Palef's Dark Blue](http://www.lessmilk.com/game/dark-blue/) game by leveraging author's provided code as modules
 - gameover/ - Implements a life maximum and game ends when all lives are lost
-- gamepause/ - Implements the ability to pause a game
+- gamepause/ - Implements the ability to pause a game [Not yet working!!]
 
 ### Resources
 
@@ -154,4 +187,4 @@ The sources in this section, with the exception of the web server, are mostly di
 
 Bonus things developed while working through the exercises
 
-- tictactoe/ - BONUS: A basic Tic-Tac-Toe implementation
+- tictactoe/ - BONUS: A basic Tic-Tac-Toe implementation [Not yet working!!]

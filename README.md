@@ -1,24 +1,30 @@
 # Eloquent JavaScript
 
-This repository presents solutions to the excercises in the third edition of Marijn Haverbeke's _Eloquent JavaScript_ ([ISBN 978-1-59327-950-9](https://read.amazon.com/kp/embed?asin=B07C96Q217&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_fxZ.EbDN7B1DB)).
+This repository presents solutions to the exercises in the third edition of Marijn Haverbeke's _Eloquent JavaScript_ ([ISBN 978-1-59327-950-9](https://read.amazon.com/kp/embed?asin=B07C96Q217&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_fxZ.EbDN7B1DB)).
+
+Obviously my solutions are not the only possible solutions to the exercises presented in Marijn's book. Feel free to devise your own, perhaps better, approaches.  In many cases, my code is a straight copy of the code presented in the book.  Where I wanted to do so, I have modified things to better match my own style.  With admitted hubris, in some cases I think my examples are more 'eloquent' but be your own judge please.
 
 ## Installing
 
-### Cloan This Repository
+What follows are instructions for using running these exercise solutions. These instructions are biased towards Mac OS but should pretty much work the same for any [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating system where you have [command line access](https://www.hackneys.com/docs/in-the-beginning-was-the-command-line.pdf). They should also be pretty close for Microsoft Windows, but I have not tested them that way. If you're so inclined and find problems, your submission of a pull request to this repository to correct the issue would be appreciated. Also, if you find any errors, please submit either an issue or a pull request correcting the problem.
 
-Cloan this GitHub repo to your development commputer.  Refer to [GitHub tutorials](https://duckduckgo.com/?q=%22clone%20github%20repository%20tutorial%22&kp=1&kl=us-en) as there are several ways to do this.
+I have sprinkled more external links in these instructions than would perhaps be normal. It's just my attempt to try to make using these examples easy for a beginner.
+
+### Clone This Repository
+
+Clone this GitHub repo to your development computer.  Refer to [GitHub tutorials](https://duckduckgo.com/?q=%22clone%20github%20repository%20tutorial%22&kp=1&kl=us-en) as there are several ways to do this.
 
 While working on this project, I used [Visual Studio Code](https://code.visualstudio.com) as my code editor and cloned the repo using [VSCode's built-in GitHub integration](https://code.visualstudio.com/docs/editor/github).
 
-Whichever editor you use, these instructions assume you clone this repository to a `code` subdirectory of your user home directory (i.e. `~/code`). If you use a different subdirectory, you will need to change `~/code` in the example commands to the path to which you cloned the repo where neccessary.
+Whichever editor you use, these instructions assume you clone this repository to a `code` subdirectory of your [home directory](https://www.wise-geek.com/what-is-a-home-directory.htm) (i.e. `~/code`). If you use a different subdirectory, you will need to change `~/code` in the example commands to the path to which you cloned the repo where necessary.
 
 ### Install NodeJS (along with NPM)
 
-If you haven't already done so, you will also need to have [Node.js](nodejs.org) installed. While some of these examples could in theory be run from the console in any browser, using Node lets us easily also run a small web server for the Chapter 13 excercises and beyond.  There are [numerous online tutorials and training materials](https://duckduckgo.com/?q=%22node%20installation%20tutorial%22&kp=1&kl=us-en) for how to install NodeJS so I won't duplicate that information here.  Installing NodeJS should also automatically install the Node Package Manager ([NPM](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/)).
+If you haven't already done so, you will also need to have [Node.js](nodejs.org) installed. While some of these examples could in theory be run from the console in any browser, using Node lets us easily also run a small web server for the Chapter 13 exercises and beyond.  There are [numerous online tutorials and training materials](https://duckduckgo.com/?q=%22node%20installation%20tutorial%22&kp=1&kl=us-en) for how to install NodeJS so I won't duplicate that information here.  Installing NodeJS should also automatically install the Node Package Manager ([NPM](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/)).
 
 ### Check Your Installation
 
-Once you have cloaned the repo and installed NodeJS along with NPM, you can check your installation.  From a shell command prompt, you should be able to execute something like this (although the version numbers may differ):
+Once you have cloned the repo and installed NodeJS along with NPM, you can check your installation.  From a [shell command prompt](https://en.wikipedia.org/wiki/Command-line_interface), you should be able to execute something like this (although the version numbers may differ):
 
 ```bash
 $ cd ~/code/eloquentjs
@@ -38,14 +44,14 @@ $ npm install
 
 ## Running Solutions
 
-As mentioned, these solutions were written to be run within the [Node.js](nodejs.org) runtime environment.  Once you have cloaned this repository and installed NodeJS and the Express framework, you should be able to run the excercise solutions.
+As mentioned, these solutions were written to be run within the [Node.js](nodejs.org) runtime environment.  Once you have cloned this repository and installed NodeJS and the Express framework, you should be able to run the exercise solutions.
 
 ### Running Chapter 1 through 12 Exercises
 
-After installing Node.js and downloading this repository, to run an excercise simply run node with the excercise name as a parameter from a terminal prompt after changing the directory to where you locally installed the repository. For example, assuming you are using Mac OS and have it installed on a folder called `elequentjs` under a folder called `code`, you would:
+After installing Node.js and downloading this repository, to run an exercise simply run node with the exercise name as a parameter from a terminal prompt after changing the directory to where you locally installed the repository. For example, assuming you are using Mac OS and have it installed on a folder called `eloquentjs` under a folder called `code`, you would:
 
 ```bash
-$ cd ~/code/elequentjs
+$ cd ~/code/eloquentjs
 $ node chapter01/helloworld.js
 Hello World!
 ```
@@ -66,7 +72,7 @@ Then browse to http://localhost:6502 in your favorite browser to view the exerci
 
 ## Notes
 
-The excercise solutions attempt to only use the concepts that have been introduced up to that
+The exercise solutions attempt to only use the concepts that have been introduced up to that
 point in the book. For example, chapter one solutions to not use functions since functions
 are introduced in chapter two. So, if you're an expert and think "there is a better way" when looking at a solution please keep in mind that your concept might not have been introduced to the reader yet.
 
@@ -100,7 +106,7 @@ are introduced in chapter two. So, if you're an expert and think "there is a bet
 - flatten.js - Flattens arrays into a single array
 - loop.js - A custom loop that tests and updates while processing
 - every.js - Tests to see if all elements in an array pass a test
-- dominant.js - Determines the dominant writting direction in a string of text
+- dominant.js - Determines the dominant writing direction in a string of text
 
 ### Chapter Six -- The Secret Life of Objects
 
@@ -112,7 +118,7 @@ are introduced in chapter two. So, if you're an expert and think "there is a bet
 ### Chapter Seven -- Project: A Robot
 
 - measure.js - Compares the performance of two robots
-- efficient.js - Defines a more efficent robot
+- efficient.js - Defines a more efficient robot
 - persistent.js - Defines a persistent group
 
 ### Chapter Eight -- Bugs and Errors
@@ -128,26 +134,26 @@ are introduced in chapter two. So, if you're an expert and think "there is a bet
 
 ### Chapter Ten -- Modules
 
-- modulerobot.js - A discussion of module orgainzation of the robot project
+- modulerobot.js - A discussion of module organization of the robot project
 - roads.js - CommonJS Module for the array of roads. Also includes an ES6 style version as a block comment
 - circular.js - circular dependencies
 
 ### Chapter Eleven -- Asynchronous Programming
 
 - crowscalpel.js - Implements ansyn 'locateScalpel' function
-- promiseall.js - A promise that waits for all theother promises to succeed
+- promiseall.js - A promise that waits for all the other promises to succeed
 
 ### Chapter Twelve -- Project: A Programming Language
 
 - eggsamples.js - Text provided sample programs using the base Egg interpreter
-- arrays.js - Addes support of arrays to the base Egg interpreter
+- arrays.js - Adds support of arrays to the base Egg interpreter
 - closure.js - Explains how closures work in the base Egg interpreter
 - comments.js - Adds comment support to the base Egg interpreter
 - fixedscope.js - Adds a new 'set' special form
 
 ### Chapter Thirteen - JavaScript and the Browser
 
-Chapter thirteen has no excercises. The solution here lays groundwork for the browser-based solutions going forward by providing a Node-based web server to serve the HTML, CSS, and JavaScript
+Chapter thirteen has no exercises. The solution here lays groundwork for the browser-based solutions going forward by providing a Node-based web server to serve the HTML, CSS, and JavaScript
 files along with any other assets.
 
 - hello/ - Another "Hello World" to illustrate using the node web server provided for viewing web-based exercises
@@ -161,7 +167,7 @@ files along with any other assets.
 
 ### Chapter Fifteen - Handling Events
 
-- ballon/ - Displays a baloon that can be inflated and deflated with arrow keys but don't over inflate
+- ballon/ - Displays a balloon that can be inflated and deflated with arrow keys but don't over inflate
 - mousetrail/ - Mouse trails following the mouse
 - tabs/ - Simple tabbed interface
 

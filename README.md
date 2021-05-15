@@ -6,7 +6,7 @@ This repository presents solutions to the excercises in the third edition of Mar
 
 ### Cloan This Repository
 
-Cloan this GitHub repo to your development commputer.  Refer to [GitHub tutorials](https://duckduckgo.com/?q="clone github repository tutorial"&kp=1&kl=us-en) as there are several ways to do this.
+Cloan this GitHub repo to your development commputer.  Refer to [GitHub tutorials](https://duckduckgo.com/?q=%22clone%20github%20repository%20tutorial%22&kp=1&kl=us-en) as there are several ways to do this.
 
 While working on this project, I used [Visual Studio Code](https://code.visualstudio.com) as my code editor and cloned the repo using [VSCode's built-in GitHub integration](https://code.visualstudio.com/docs/editor/github).
 
@@ -14,7 +14,7 @@ Whichever editor you use, these instructions assume you clone this repository to
 
 ### Install NodeJS (along with NPM)
 
-If you haven't already done so, you will also need to have [Node.js](nodejs.org) installed. While some of these examples could in theory be run from the console in any browser, using Node lets us easily also run a small web server for the Chapter 13 excercises and beyond.  There are [numerous online tutorials and training materials](https://duckduckgo.com/?q="node installation tutorial"&kp=1&kl=us-en) for how to install NodeJS so I won't duplicate that information here.  Installing NodeJS should also automatically install the Node Package Manager ([NPM](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/)).
+If you haven't already done so, you will also need to have [Node.js](nodejs.org) installed. While some of these examples could in theory be run from the console in any browser, using Node lets us easily also run a small web server for the Chapter 13 excercises and beyond.  There are [numerous online tutorials and training materials](https://duckduckgo.com/?q=%22node%20installation%20tutorial%22&kp=1&kl=us-en) for how to install NodeJS so I won't duplicate that information here.  Installing NodeJS should also automatically install the Node Package Manager ([NPM](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/)).
 
 ### Check Your Installation
 
